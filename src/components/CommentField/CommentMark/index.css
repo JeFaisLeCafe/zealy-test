@@ -1,0 +1,17 @@
+.comment-mark {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: red;
+  border: 1px solid #fff;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-mark:hover {
+  cursor: pointer;
+  opacity: 1;
+}

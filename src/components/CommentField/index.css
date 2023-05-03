@@ -1,0 +1,37 @@
+.comment-field {
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  background: black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-field__textarea {
+  width: 100%;
+  zindex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  flexbasis: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.comment-field__actions {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-field__discard {
+  background: red;
+  flex-basis: 50%;
+  border-radius: 0;
+}
+
+.comment-field__save {
+  border-radius: 0;
+  flex-basis: 50%;
+  background: green;
+}
