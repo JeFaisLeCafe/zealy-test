@@ -4,6 +4,6 @@ export type CommentType = {
   top: number;
   isOpen?: boolean;
   isEditing: boolean;
-  reaction: string;
+  reaction?: string;
   text?: string;
 };

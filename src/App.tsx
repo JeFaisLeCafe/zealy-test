@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import { CommentType } from "./types";
 import Comment from "./components/Comment";
@@ -10,11 +10,7 @@ function App() {
   const saveComment = (comment: CommentType) => {
     const newState = comments.map((c) => {
       if (c.timestamp === comment.timestamp) {
-        return {
-          ...c,
-          isEditing: false,
-          isOpen: false
-        };
+        return comment;
       }
 
       return c;
@@ -41,8 +37,7 @@ function App() {
       isEditing: true,
       isOpen: true,
       left: e.clientX,
-      top: e.clientY,
-      reaction: "👍"
+      top: e.clientY
     };
 
     const newState = [...comments, comment];

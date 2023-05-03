@@ -35,3 +35,24 @@
   flex-basis: 50%;
   background: green;
 }
+
+.comment-field__reactions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  cursor: pointer;
+}
+
+.comment-field__reaction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-field__reaction--active {
+  background: #ccc;
+}
